@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.logo {
+  font-family: Dancing Script;
+}
+
+body {
+  font-family: Playfair Display;
+}
