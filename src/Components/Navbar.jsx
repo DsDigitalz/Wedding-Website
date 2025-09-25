@@ -16,7 +16,7 @@ export default function Navbar() {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   return (
-    <nav className="relative flex items-center justify-between p-4 md:px-12 bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg border-b border-gray-200">
+    <nav className=" flex items-center justify-between p-4 md:px-12 bg-transparent bg-opacity-80 backdrop-filter backdrop-blur-lg  border-gray-200">
       {/* Desktop & Mobile Logo */}
       <div className="logo">
         <span className="text-2xl md:text-4xl lg:text-[40px] font-bold text-orange-600 text-shadow-lg ">
@@ -29,7 +29,7 @@ export default function Navbar() {
           <a
             key={link.name}
             href={link.href}
-            className="text-gray-700 hover:text-orange-600 transition-colors duration-300 relative group uppercase"
+            className="links text-gray-700 hover:text-orange-600 transition-colors duration-300 relative group uppercase "
           >
             {link.name}
             {link.name === "Home" && (
@@ -42,7 +42,7 @@ export default function Navbar() {
       <a
         href="#"
         uppercase
-        className="hidden lg:flex items-center space-x-2 px-6 py-2 border-2 border-gray-700 text-gray-700 font-bold uppercase hover:bg-gray-700 hover:text-white transition-colors duration-300"
+        className="navlinks hidden lg:flex items-center space-x-2 px-6 py-2 border-2 border-gray-700 text-gray-700 font-bold uppercase hover:bg-gray-700 hover:text-white transition-colors duration-300"
       >
         <span>Consult</span>
         <FaArrowRight />
@@ -77,7 +77,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#"
-                className="mt-4 flex items-center space-x-2 px-4 py-2 border-2 border-gray-700 text-gray-700  hover:bg-gray-700 hover:text-white transition-colors duration-300 justify-center"
+                className="navlinks mt-4 flex items-center space-x-2 px-4 py-2 border-2 border-gray-700 text-gray-700  hover:bg-gray-700 hover:text-white transition-colors duration-300 justify-center"
               >
                 <span>Consult</span>
                 <FaArrowRight />
