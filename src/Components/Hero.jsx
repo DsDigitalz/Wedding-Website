@@ -3,9 +3,9 @@ import { FaArrowRight } from "react-icons/fa6"; // Assuming you have react-icons
 
 export default function Hero() {
   return (
-    <section className=" relative flex flex-col lg:flex-row items-center justify-between h-screen bg-gray-50 overflow-hidden">
+    <section className="-z-50 top-20 relative flex flex-col lg:flex-row items-center justify-between h-screen bg-gray-50 overflow-hidden">
       {/* Left Content Area */}
-      <div className="lg:relative absolute top-40 lg:top-0 z-10 w-full lg:w-1/2 p-6 md:p-12 lg:pl-24 lg:py-20 flex flex-col justify-center text-center lg:text-left">
+      <div className="lg:relative absolute top-50 lg:top-0 z-10 w-full lg:w-1/2 p-6 md:p-12 lg:pl-24 lg:py-20 flex flex-col justify-center text-center lg:text-left">
         {/* Decorative Flowers - Left */}
         <div className="absolute -left-5  top-1/2 -translate-y-1/2 lg:top-50 lg:bottom-0 lg:left-0 opacity-80 lg:opacity-100 z-0">
           {/* Replace with your actual flower image or SVG */}
@@ -32,8 +32,8 @@ export default function Hero() {
         {/* Book for Consult Button */}
         <a
           href="#"
-          className="inline-flex items-center justify-center space-x-3 px-8 py-3 bg-[#D1F0B1] text-black font-bold uppercase shadow-lg rounded-tl-3xl rounded-br-3xl
-             transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[5px_10px_0px_0px_rgba(0,0,0,1)] max-w-fit mx-auto lg:mx-0 z-10"
+          className=" navlinks inline-flex items-center justify-center  cursor-pointer space-x-3 px-8 py-3 bg-[#D1F0B1] text-black font-bold uppercase  rounded-tl-3xl rounded-br-3xl 
+             transition-all duration-300   transform -translate-y-1 shadow-[5px_10px_0px_0px_rgba(0,0,0,1)] max-w-fit mx-auto lg:mx-0 z-10"
         >
           <span>Book for Consult</span>
           <FaArrowRight className="text-3xl bg-black text-white p-1 rounded-tl-xl rounded-br-xl" />
