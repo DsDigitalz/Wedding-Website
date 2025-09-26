@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="-z-50 top-20 relative flex flex-col lg:flex-row items-center justify-between h-screen bg-gray-50 overflow-hidden">
       {/* Left Content Area */}
-      <div className="lg:relative absolute top-50 lg:top-0 z-10 w-full lg:w-1/2 p-6 md:p-12 lg:pl-24 lg:py-20 flex flex-col justify-center text-center lg:text-left">
+      <div className="lg:relative absolute top-30 lg:top-0 z-10 w-full lg:w-1/2 p-6 md:p-12 lg:pl-24 lg:py-20 flex flex-col justify-center text-center lg:text-left">
         {/* Decorative Flowers - Left */}
         <div className="absolute -left-5  top-1/2 -translate-y-1/2 lg:top-50 lg:bottom-0 lg:left-0 opacity-80 lg:opacity-100 z-0">
           {/* Replace with your actual flower image or SVG */}
