@@ -3,17 +3,17 @@ import { FaArrowRight } from "react-icons/fa6"; // Assuming you have react-icons
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col lg:flex-row items-center justify-between h-screen bg-gray-50 overflow-hidden">
+    <section className=" relative flex flex-col lg:flex-row items-center justify-between h-screen bg-gray-50 overflow-hidden">
       {/* Left Content Area */}
-      <div className="relative z-10 w-full lg:w-1/2 p-6 md:p-12 lg:pl-24 lg:py-20 flex flex-col justify-center text-center lg:text-left">
+      <div className="lg:relative absolute top-40 lg:top-0 z-10 w-full lg:w-1/2 p-6 md:p-12 lg:pl-24 lg:py-20 flex flex-col justify-center text-center lg:text-left">
         {/* Decorative Flowers - Left */}
-        <div className="absolute left-16 top-1/2 -translate-y-1/2 lg:top-50 lg:bottom-0 lg:left-0 opacity-80 lg:opacity-100 z-0">
+        <div className="absolute -left-5  top-1/2 -translate-y-1/2 lg:top-50 lg:bottom-0 lg:left-0 opacity-80 lg:opacity-100 z-0">
           {/* Replace with your actual flower image or SVG */}
           {/* This is a placeholder for the flower image on the left side */}
           <img
             src="flowerbg.png" // Placeholder image URL
             alt="Decorative Flowers"
-            className="w-24  object-cover" // Adjust size and rotation as needed
+            className="w-24 lg:w-24  lg:object-cover" // Adjust size and rotation as needed
           />
         </div>
 
@@ -41,8 +41,17 @@ export default function Hero() {
       </div>
 
       {/* Right Image Area */}
-      <div>
-        <img src="Heroimg.png" alt="" />
+      <div className="absolute lg:hidden">
+        <img
+          src="Heroimg.png"
+          alt=""
+          className="h-screen md:w-240 w-full object-cover"
+        />
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-white/0 lg:from-white lg:via-white/80 lg:to-transparent"></div>
+      </div>
+      <div className="hidden lg:block">
+        <img src="Heroimg.png" alt="" className="object-cover w-full" />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-white/0 lg:from-white lg:via-white/80 lg:to-transparent"></div>
       </div>
