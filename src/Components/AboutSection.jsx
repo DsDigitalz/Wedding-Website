@@ -53,7 +53,7 @@ const AboutSection = () => {
 
           {/* Heading */}
           <motion.h2
-            className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight"
+            className=" text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight"
             variants={itemVariants}
           >
             About Our
