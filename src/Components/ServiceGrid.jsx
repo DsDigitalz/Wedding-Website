@@ -56,7 +56,7 @@ export default function ServiceGrid() {
   return (
     <section className=" bg-white">
       <motion.div
-        className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pb-20"
+        className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pb-15 lg:pb-20"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.18 }}
