@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa6"; // Assuming you have react-icons
 export default function WeddingStats() {
   return (
     // Adjusted py-15 to py-16 for standard Tailwind spacing
-    <section className="bg-[#F9EBDD] py-16">
+    <section className="bg-[#F9EBDD] py-15 lg:pb-20">
       <div
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 
         flex flex-col lg:flex-row items-center gap-1 lg:gap-20"

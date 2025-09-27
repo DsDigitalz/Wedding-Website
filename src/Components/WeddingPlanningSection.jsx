@@ -53,7 +53,7 @@ const WeddingPlanningSection = () => {
 
             <motion.a
               href="#"
-              className="navlinks border w-40 mx-auto lg:mx-0 flex justify-center items-center gap-2 font-bold text-black uppercase hover:bg-black hover:text-white hover:transition-all duration-300"
+              className="navlinks border p-3 w-40 mx-auto lg:mx-0 flex justify-center items-center gap-2 font-bold text-black uppercase hover:bg-black hover:text-white hover:transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
