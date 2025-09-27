@@ -114,7 +114,7 @@ export default function Navbar() {
                     href={link.href}
                     onClick={() => handleLinkClick(link.name)}
                     // ✅ CHANGE: Reduced font size from text-2xl to text-xl for mobile menu
-                    className={`block text-xl font-medium transition-colors duration-300 py- border-b border-gray-100 uppercase ${
+                    className={`navlinks block text-lg font-medium transition-colors duration-300 py- border-b border-gray-100 uppercase ${
                       activeLink === link.name
                         ? "text-orange-600"
                         : "text-gray-700 hover:text-orange-600"

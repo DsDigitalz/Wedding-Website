@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="-z-50 top-20 relative flex flex-col lg:flex-row items-center justify-between h-screen bg-gray-50 overflow-hidden">
       {/* Left Content Area */}
-      <div className="lg:relative absolute top-30 lg:top-0 z-10 w-full lg:w-1/2 p-6 md:p-12 lg:pl-24 lg:py-20 flex flex-col justify-center text-center lg:text-left">
+      <div className="lg:relative absolute top-20 lg:top-0 z-10 w-full lg:w-1/2 p-6 md:p-12 lg:pl-24 lg:py-20 flex flex-col justify-center text-center  lg:text-left">
         {/* Decorative Flowers - Left */}
         <div className="absolute -left-5  top-1/2 -translate-y-1/2 lg:top-50 lg:bottom-0 lg:left-0 opacity-80 lg:opacity-100 z-0">
           {/* Replace with your actual flower image or SVG */}
@@ -17,10 +17,10 @@ export default function Hero() {
           />
         </div>
 
-        <p className="text-lg text-gray-800 mb-4 z-10">— Hello and Welcome,</p>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-4 z-10">
+        <p className="text-lg sm:text-2xl text-gray-800 mb-4 z-10">— Hello and Welcome,</p>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-gray-800 leading-tight mb-4 z-10">
           Plan Your <br />
-          <span className="text-orange-600">Dream Wedding</span> <br />
+          <span className="text-orange-600 text-shadow-2xs">Dream Wedding</span> <br />
           With
         </h1>
         <p className="text-base md:text-lg text-gray-800 mb-8 max-w-xl mx-auto lg:mx-0 z-10">
