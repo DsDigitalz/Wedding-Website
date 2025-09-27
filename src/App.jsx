@@ -6,6 +6,7 @@ import WeddingPlanningSection from "./Components/WeddingPlanningSection";
 import ServiceGrid from "./Components/ServiceGrid";
 import WeddingStats from "./Components/WeddingStats";
 import WeddingGallery from "./Components/WeddingGallery";
+import WeddingPageContent from "./Components/WeddingPageContent";
 
 export default function App() {
   return (
@@ -15,8 +16,9 @@ export default function App() {
       <AboutSection />
       <WeddingPlanningSection />
       <ServiceGrid />
-      <WeddingStats/>
-      <WeddingGallery/>
+      <WeddingStats />
+      <WeddingGallery />
+      <WeddingPageContent />
     </div>
   );
 }
