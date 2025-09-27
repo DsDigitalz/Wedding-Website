@@ -1,57 +1,107 @@
 // src/components/ServiceGrid.jsx
-
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  LuCakeSlice,
+  LuCamera,
+  LuGem,
+  LuUsers,
+  LuUtensils,
+  LuFileText,
+  LuLandmark,
+  LuMusic,
+} from "react-icons/lu"; // <-- use lucide (Lu) icons
 
-// NOTE: You must have these imported or defined in your project
-import ServiceCard from "./ServiceCard";
-import { serviceData } from "../data/serviceData";
-import { useScrollAnimation } from "../hooks/useScrollAnimation";
+// Services data (icons chosen to closely match your screenshot)
+const services = [
+  { id: 1, icon: <LuCakeSlice />, title: "Wedding Cake" },
+  { id: 2, icon: <LuCamera />, title: "Wedding Photography" },
+  { id: 3, icon: <LuGem />, title: "Rings & Jewelry" },
+  { id: 4, icon: <LuUsers />, title: "Guest Management" },
+  { id: 5, icon: <LuUtensils />, title: "Catering" },
+  { id: 6, icon: <LuFileText />, title: "Invitations" },
+  { id: 7, icon: <LuLandmark />, title: "Venue Setup" },
+  { id: 8, icon: <LuMusic />, title: "Entertainment" },
+];
 
-// Container variants for the staggered effect
+// Framer Motion variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.1, // Small delay between each card
-      delayChildren: 0.2, // Initial delay before the first card animates
-    },
+    transition: { staggerChildren: 0.12, delayChildren: 0.18 },
   },
 };
 
-const ServiceGrid = () => {
-  // Hook to trigger animation when the whole section scrolls into view
-  const { ref, controls } = useScrollAnimation(0.1);
+const cardVariants = {
+  hidden: { opacity: 0, y: 36 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.56, ease: "easeOut" },
+  },
+};
 
+const iconVariants = {
+  hidden: { scale: 0, rotate: -45, opacity: 0 },
+  visible: {
+    scale: 1,
+    rotate: 0,
+    opacity: 1,
+    transition: { type: "spring", stiffness: 180, damping: 14 },
+  },
+};
+
+export default function ServiceGrid() {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className=" bg-white">
       <motion.div
-        ref={ref}
+        className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pb-20"
         initial="hidden"
-        animate={controls}
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.18 }}
         variants={containerVariants}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
-        {/* The responsive grid layout:
-                  - Mobile: 1 column
-                  - md: 2 columns
-                  - lg: 4 columns
-                */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {serviceData.map((service, index) => (
-            <ServiceCard
+          {services.map((service) => (
+            <motion.div
               key={service.id}
-              title={service.title}
-              icon={service.icon}
-              // Pass the index for custom staggered delay
-              index={index}
-            />
+              variants={cardVariants}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-white shadow-md rounded-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300"
+            >
+              {/* Top icon / beige band */}
+              <div className="bg-[#F5E2D5] flex justify-center items-center h-40">
+                <motion.div
+                  variants={iconVariants}
+                  className="text-6xl text-gray-800"
+                  aria-hidden
+                >
+                  {service.icon}
+                </motion.div>
+              </div>
+
+              {/* Bottom content */}
+              <div className="p-6 text-center">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  dapibus placerat velit.
+                </p>
+                <a
+                  href="#"
+                  className="font-bold text-black uppercase text-sm flex items-center justify-center gap-2 hover:underline"
+                >
+                  SEE MORE →
+                </a>
+              </div>
+            </motion.div>
           ))}
         </div>
       </motion.div>
     </section>
   );
-};
-
-export default ServiceGrid;
+}

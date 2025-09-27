@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const WeddingPlanningSection = () => {
   return (
-    <section className="bg-white overflow-hidden pb-20">
+    <section className="bg-white overflow-hidden pb-10 lg:pb-20">
       {/* Top Image */}
       <div className="z-100 flex justify-center">
         <motion.img

@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 import AboutSection from "./Components/AboutSection";
 import WeddingPlanningSection from "./Components/WeddingPlanningSection";
 import ServiceGrid from "./Components/ServiceGrid";
+import WeddingStats from "./Components/WeddingStats";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <AboutSection />
       <WeddingPlanningSection />
       <ServiceGrid />
+      <WeddingStats/>
     </div>
   );
 }
