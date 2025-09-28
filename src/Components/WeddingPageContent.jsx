@@ -77,10 +77,10 @@ const GalleryCard = ({ src, alt, title, large, index }) => {
       <img
         src={src}
         alt={alt}
-        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        className="w-full brightness-105 h-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
 
-      {/* Text Overlay (Slides up on hover) */}
+      {/* Text Overlay (  Slides up on hover) */}
       <div
         className="absolute inset-x-0 bottom-0 p-4 text-center bg-white text-black font-semibold 
                         transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"
