@@ -7,6 +7,7 @@ import ServiceGrid from "./Components/ServiceGrid";
 import WeddingStats from "./Components/WeddingStats";
 import WeddingGallery from "./Components/WeddingGallery";
 import WeddingPageContent from "./Components/WeddingPageContent";
+import ClientReviewSection from "./Components/ClientReviewSection";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <WeddingStats />
       <WeddingGallery />
       <WeddingPageContent />
+      <ClientReviewSection />
     </div>
   );
 }
