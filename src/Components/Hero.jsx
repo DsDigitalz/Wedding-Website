@@ -36,7 +36,7 @@ export default function Hero() {
 
       {/* Left Content */}
       <motion.div
-        className="lg:relative lg:top-0 absolute top-40 z-20 w-full lg:w-1/2 p-6 md:p-12 lg:pl-24 lg:py-20 flex flex-col justify-center text-center lg:text-left"
+        className="lg:relative lg:top-0 absolute top-30 z-20 w-full lg:w-1/2 p-6 md:p-12 lg:pl-24 lg:py-20 flex flex-col justify-center text-center lg:text-left"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
