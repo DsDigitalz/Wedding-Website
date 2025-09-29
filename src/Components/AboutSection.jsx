@@ -18,7 +18,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-white to-[#F8E8D8] py-12 sm:py-16 lg:py-20 relative overflow-hidden">
+    <section className="bg-gradient-to-r from-white to-[#F8E8D8] py-12 sm:py-16 lg:py-20 relative overflow-hidden" behavior="smooth" id="about">
       {/* Floating Background Image */}
       <div className="absolute top-0 right-0 max-w-xs md:max-w-sm z-0 opacity-60">
         <img

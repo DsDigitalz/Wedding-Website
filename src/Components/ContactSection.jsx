@@ -25,7 +25,7 @@ const ContactSection = () => {
 
   return (
     <motion.section
-      className="max-w-[1440px] mx-auto py-15 px-6 sm:px-8 lg:px-12 bg-white"
+      className="max-w-[1440px] mx-auto py-15 px-6 sm:px-8 lg:px-12 bg-white" behavior="smooth" id="contact"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"

@@ -47,7 +47,7 @@ export default function Navbar() {
     >
       {/* Logo and Desktop Navigation (Omitted for brevity) */}
       <div className="logo">
-        <span className="text-2xl md:text-4xl lg:text-[40px] font-bold text-orange-600">
+        <span className="text-[28px] md:text-4xl lg:text-[40px] font-bold text-orange-600">
           True<span className="text-gray-700">Love</span>
         </span>
       </div>

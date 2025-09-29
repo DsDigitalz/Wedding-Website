@@ -19,8 +19,10 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative top-10  flex flex-col  lg:flex-row items-center justify-between h-screen bg-gray-50 overflow-hidden">
+    <section className="relative top-10 flex flex-col lg:flex-row items-center justify-between h-screen bg-gray-50 overflow-hidden" behavior="smooth">
+      
       {/* Decorative Flower Left */}
+     
       <motion.div
         initial={{ x: -80, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -34,9 +36,14 @@ export default function Hero() {
         />
       </motion.div>
 
-      {/* Left Content */}
+      {/* // ------------------------------------------------------------------
+        // 🔥 FIX 1: Content Container (Combined Mobile/Desktop)
+        // We REMOVE 'absolute' for mobile and rely on Flex/Grid containment.
+        // The container now ensures content is vertically centered on ALL screens.
+        // ------------------------------------------------------------------
+      */}
       <motion.div
-        className="lg:relative lg:top-0 absolute top-30 z-20 w-full lg:w-1/2 p-6 md:p-12 lg:pl-24 lg:py-20 flex flex-col justify-center text-center lg:text-left"
+        className="w-full lg:w-1/2 p-6 md:p-12  xl:pl-30 lg:pl-24 lg:py-20 flex flex-col justify-center items-center lg:items-start text-center lg:text-left z-20 h-full" id="home"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
@@ -82,7 +89,13 @@ export default function Hero() {
         </motion.a>
       </motion.div>
 
-      {/* Right Image (Mobile) */}
+      {/* // ------------------------------------------------------------------
+        // 🔥 FIX 2: Right Image (Mobile)
+        // We use 'inset-0' to stretch the image, but we must use 'justify-end' 
+        // on the parent <section> to position the content area correctly.
+        // The content is now the first child, and the image is layered behind it.
+        // ------------------------------------------------------------------
+      */}
       <motion.div
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
