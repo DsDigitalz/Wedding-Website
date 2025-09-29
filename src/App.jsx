@@ -9,6 +9,7 @@ import WeddingGallery from "./Components/WeddingGallery";
 import WeddingPageContent from "./Components/WeddingPageContent";
 import ClientReviewSection from "./Components/ClientReviewSection";
 import ContactSection from "./Components/ContactSection";
+import VideoSection from "./Components/Footer";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
       <WeddingPageContent />
       <ClientReviewSection />
       <ContactSection />
+      <VideoSection />
     </div>
   );
 }
