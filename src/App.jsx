@@ -8,6 +8,7 @@ import WeddingStats from "./Components/WeddingStats";
 import WeddingGallery from "./Components/WeddingGallery";
 import WeddingPageContent from "./Components/WeddingPageContent";
 import ClientReviewSection from "./Components/ClientReviewSection";
+import ContactSection from "./Components/ContactSection";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       <WeddingGallery />
       <WeddingPageContent />
       <ClientReviewSection />
+      <ContactSection />
     </div>
   );
 }

@@ -102,9 +102,9 @@ const ClientReviewSection = () => {
   const leftInView = useInView(leftRef, { once: true, amount: 0.2 });
 
   return (
-    <div className="min-h-screen bg-gradient-to-bl from-white to-orange-100/50 py-15 px-4">
-      <div className="max-w-[1440px] mx-auto">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-0 items-start">
+    <div className=" bg-gradient-to-bl from-white to-orange-100/50 py-15 px-4">
+      <div>
+        <div className="max-w-[1440px] lg:px-7 mx-auto grid lg:grid-cols-2 gap-10 lg:gap-0 items-start">
           {/* Left Section (Animated) */}
           <motion.div
             ref={leftRef}
