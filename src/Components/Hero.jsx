@@ -43,7 +43,7 @@ export default function Hero() {
         // ------------------------------------------------------------------
       */}
       <motion.div
-        className=" lg:w-1/2 p-6 md:p-12  xl:pl-30 lg:pl-24 lg:py-20 flex flex-col justify-center items-center lg:items-start text-center lg:text-left mt-10 mb-15 sm:mb-0 z-20 h-full" id="home"
+        className=" lg:w-1/2 p-6 md:p-12  xl:pl-30 lg:pl-24 lg:py-20 flex flex-col justify-center items-center lg:items-start text-center lg:text-left  mb-15 sm:mb-0 z-20 h-full" id="home"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
